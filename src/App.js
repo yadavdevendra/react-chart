@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import BarChartcomponents from './components/BarChartcomponents';
+import DoughnutChart from './components/DoughnutChart';
+import PaiChartCom from './components/PaiChartCom';
+import LineChart from './components/LineChart';
+import ApiBarchart from './components/ApiBarchart';
+import ApiPaichart from './components/ApiPaichart';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='barchart'><BarChartcomponents /></div>
+      <div className='doughnutChart'><DoughnutChart /></div>
+      <div className='paiChart'><PaiChartCom /></div>
+      <div className='lineChart'><LineChart /></div>
+      <div className='lineChart'><ApiBarchart /></div>
+      <div className='lineChart'><ApiPaichart /></div>
     </div>
   );
 }
